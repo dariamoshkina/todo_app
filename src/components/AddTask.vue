@@ -19,7 +19,7 @@ import axios from 'axios';
 import Priorities from '../config';
 
 export default {
-	name: "AddTask",
+	name: 'AddTask',
 	data() {
 		return {
 			options: Priorities,

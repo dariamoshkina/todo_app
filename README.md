@@ -10,18 +10,18 @@
 
 ## Project setup
 
-#### Install backend and serve at localhost:5000
+### Install backend and serve at localhost:5000
 ```
 pip install -r api/requirements.txt
 FLASK_APP=api/app.py flask run
 ```
 
-#### Install front-end
+### Install front-end
 ```
 npm install
 ```
 
-#### Serve with hot reload at localhost:8080
+### Serve with hot reload at localhost:8080
 ```
 npm run serve
 ```

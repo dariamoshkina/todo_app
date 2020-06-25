@@ -21,9 +21,9 @@ import axios from 'axios';
 import Priorities from '../config';
 
 export default {
-	name: "EditTask",
+	name: 'EditTask',
 	props: [
-		"task"
+		'task'
 	],
 	data() {
 		return {
@@ -54,6 +54,6 @@ export default {
 			this.updateTask(payload);
 			this.$bvModal.hide('edit-task-modal-' + this.$props.task.task_id);
 		}
-    },
+	},
 }
 </script>

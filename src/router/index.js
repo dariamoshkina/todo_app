@@ -9,8 +9,7 @@ export default new Router({
   routes: [
     {
       path: '/task',
-      name: 'Tasks',
       component: Tasks,
-    }
+    },
   ],
 });
