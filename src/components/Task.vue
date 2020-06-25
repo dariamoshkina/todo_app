@@ -4,7 +4,7 @@
 		<td>{{task.priority.name}}</td>
 		<td>{{task.created_at}}</td>
 		<td>
-			<button type="button" class="btn btn-primary" v-b-modal="'edit-task-modal-' + task.task_id" @click="showModal(task.task_id)">Edit</button>
+			<button type="button" class="btn btn-primary" v-b-modal="'edit-task-modal-' + task.task_id" @click="$bvModal.show('edit-task-modal-'+task.task_id)">Edit</button>			
 			<EditTask v-bind:task="task"/>
 		</td>
 		<td>
@@ -31,10 +31,6 @@ export default {
 					console.log(error);
 					this.$parent.getTasks();
 				});
-		},
-		showModal(task_id) {
-			console.log('edit-task-modal-'+task_id);
-			this.$bvModal.show('edit-task-modal-'+task_id);
 		},
 	},
 	components: {
