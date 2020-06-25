@@ -1,5 +1,5 @@
 <template>
-	<b-modal :id="'edit-task-modal-' + task.task_id" title="Update task" hide-footer hide-header>
+	<b-modal :id="'edit-task-modal-' + task.task_id" hide-footer hide-header>
 		<h2>Edit task</h2>
 		<b-form v-on:submit.prevent="onSubmit">
 			<b-form-group label="Description: " label-for="form-descr-input">

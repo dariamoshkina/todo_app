@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-10">
 				<h1>You have {{tasks.length}} tasks</h1>
-				<table class="table table-hover">
+				<table class="table">
 					<thead>
 						<tr>
 							<th id="description-column" @click="sort('description', $event)" class="th-sm">Description</th>

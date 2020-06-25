@@ -1,6 +1,11 @@
 <template>
 	<tr>
-		<td>{{task.description}}</td>
+		<td :id="'popover-' + task.task_id">
+			{{task.description}}
+			<b-popover :target="'popover-' + task.task_id" triggers="hover" placement="left">
+				task_id={{task.task_id}}
+			</b-popover>
+		</td>
 		<td>{{task.priority.name}}</td>
 		<td>{{task.created_at}}</td>
 		<td>
